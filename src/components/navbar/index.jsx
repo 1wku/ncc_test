@@ -2,7 +2,7 @@ import cls from "classnames";
 import { useState } from "react";
 import styles from "./index.module.scss";
 
-export default function SideBar() {
+export default function Navbar() {
   const [active, setActive] = useState(0);
   const [showNav, setShowNav] = useState(false);
   const navs = ["Home", "Services", "News", "Blog", "Contact"];
