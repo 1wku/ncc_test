@@ -1,7 +1,7 @@
 @import "../../../assets/styles/mixins/resposive";
 .card {
   width: fill;
-  max-width: 22.5rem;
+  max-width: 470px;
 
   @include tablet {
     max-width: none;
