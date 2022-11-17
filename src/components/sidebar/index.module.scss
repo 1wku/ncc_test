@@ -1,0 +1,10 @@
+.nav {
+  width: fill;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  &__item {
+    padding: 1rem 0.875rem;
+  }
+}
