@@ -1,5 +1,51 @@
+@import "../../assets/styles/mixins/resposive";
 .home {
-  width: 100%;
+  width: fill;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  &__img {
+    width: 310px;
+    height: 122px;
+    margin-bottom: 2rem;
+  }
+}
+
+.lorem {
+  background: #efefef;
+  padding: 2.375rem 4rem;
+  margin-bottom: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  &__qs {
+    margin-bottom: 1rem;
+    font-weight: 700 !important;
+  }
+
+  & > * {
+    text-align: center;
+  }
+}
+
+.cardGroup {
+  width: fill;
   display: grid;
-  grid-template-columns: 150px auto;
+  grid-template-columns: repeat(3, 1fr);
+
+  align-items: center;
+  justify-content: center;
+  grid-gap: 3.125rem;
+  @include tablet {
+    grid-template-columns: repeat(auto-fill, minmax(0, 360px));
+  }
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
 }

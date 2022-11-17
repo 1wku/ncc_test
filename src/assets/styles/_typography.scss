@@ -1,5 +1,9 @@
 @import "./mixins/resposive";
 
+* {
+  font-family: "Roboto", sans-serif !important;
+}
+
 h1 {
   font-style: normal;
   font-weight: 700;
@@ -78,8 +82,8 @@ h4 {
 
 .body-1 {
   font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 25px;
 }
 

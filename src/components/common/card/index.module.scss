@@ -1,0 +1,12 @@
+.card {
+  width: fill;
+  max-width: 22.5rem;
+  &__title {
+    margin-bottom: 1.125rem;
+  }
+  &__img {
+    width: 8rem;
+    height: 8rem;
+    float: left;
+  }
+}
