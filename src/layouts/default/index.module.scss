@@ -1,4 +1,15 @@
+@import "../../assets/styles/mixins/resposive";
 .container {
   width: 100%;
   padding-left: 9.375rem;
+  @include tablet {
+    width: 100%;
+    padding: 0;
+    padding-top: 5rem;
+  }
+  @include mobile {
+    width: 100%;
+    padding: 0;
+    padding-top: 5rem;
+  }
 }

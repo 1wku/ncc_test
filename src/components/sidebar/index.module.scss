@@ -1,3 +1,4 @@
+@import "../../assets/styles/mixins/resposive";
 .nav {
   position: fixed;
   top: 0;
@@ -8,9 +9,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  background: #191718;
   height: 100vh;
+  background: #191718;
   color: #aaa;
+
+  transition: all 0.3s ease;
+  @include tablet {
+    position: absolute;
+    width: 100vw;
+    top: 3.5rem;
+    left: -100%;
+    opacity: 0;
+    z-index: -2;
+  }
+
+  @include mobile {
+    position: absolute;
+    width: 100vw;
+    top: 3.5rem;
+    left: -100%;
+    opacity: 0;
+    z-index: -2;
+  }
+
   &__item {
     width: 100%;
     padding: 1rem 0.875rem;
@@ -28,4 +49,39 @@
 
 .isActive {
   color: #fff;
+}
+
+.container {
+  &__title {
+    font-size: 24px;
+  }
+  &-mobile {
+    @include desktop {
+      display: none;
+    }
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    width: 100vw;
+    height: 3.5rem;
+
+    background: #191718;
+    color: #aaa;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+
+    & > svg {
+      fill: #aaa;
+    }
+  }
+}
+.show-navbar {
+  left: 0;
+  opacity: 1;
 }

@@ -4,7 +4,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 .container {
-  padding: 1.25rem;
+  padding: 4.5rem;
   max-width: 1440px;
   margin: 0 auto;
+  @include tablet {
+    padding: 3rem;
+    margin: 0 auto;
+  }
+  @include mobile {
+    padding: 2.25rem;
+    margin: 0 auto;
+  }
 }

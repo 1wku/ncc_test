@@ -1,6 +1,14 @@
+@import "../../../assets/styles/mixins/resposive";
 .card {
   width: fill;
   max-width: 22.5rem;
+
+  @include tablet {
+    max-width: none;
+  }
+  @include mobile {
+    max-width: none;
+  }
   &__title {
     margin-bottom: 1.125rem;
   }
